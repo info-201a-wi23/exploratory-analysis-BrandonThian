@@ -3,6 +3,15 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("init.R")}
+# Please place any global initialization codes in init.R
+# (e.g., loading libraries and csv files)
+
+# Please note that all warning messages have been intentionally suppressed by "message = FALSE, warning = FALSE" options
+# since loading 'dplyr' library shows warning messages in some environment,
+# (e.g., The following objects are masked from 'package:stats' ...)
+```
+
 ## Project title
 
 Give your project a concise, interesting title that summarizes the entirety of your project
@@ -56,6 +65,10 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
+```{r, echo = FALSE, code = readLines("table.R"), results='asis'}
+```
+
+
 Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
@@ -68,7 +81,7 @@ Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
 ### Chart 2
