@@ -37,9 +37,11 @@ No more than three sentences that summarize your project. Focus on the very most
 
 Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
 
+
 ### Related Work  
 
 Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+
 
 ### The Dataset
 
@@ -52,26 +54,29 @@ How many features (columns) are in the data?
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
 What are possible limitations or problems with this data?   (at least 200 words)
 
+
 ### Implications
 
 Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
 
+
 ### Limitations & Challenges
 What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
 
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+
 ### Table
+For H1 visa statistics, the most important information will be the approval/denial trend and the approval rate by year.
+
+This is a table that calculates the total sum of approvals and denials by year and the approval rate.
 
 ```{r, echo = FALSE, code = readLines("table.R"), results='asis'}
 ```
 
-
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
 
 ### Chart 1
 
@@ -81,8 +86,9 @@ Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-```{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart1.R")}
 ```
+
 
 ### Chart 2
 
@@ -90,8 +96,15 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
+```{r, echo = FALSE, code = readLines("chart2.R")}
+```
+
+
 ### Chart 3
 
 Include a chart
 
 Describe why you chose this chart and what information it reveals
+
+```{r, echo = FALSE, code = readLines("chart3.R")}
+```

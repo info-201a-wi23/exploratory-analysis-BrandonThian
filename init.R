@@ -1,9 +1,6 @@
 # This is a file to handle global data.
-# Feel free to add initialization code here to not load libraries and csv in each file.
-
+# Feel free to add initialization code for global here.
 library(dplyr)
-library(ggplot2)
-library(knitr)
 
 # Load csv data and combine them.
 # Data source: https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub/h-1b-employer-data-hub-files
@@ -18,15 +15,20 @@ data_columns = c("Year", "Employer", "Initial.Approval", "Initial.Denial", "Cont
 # Initialize np_data with an empty data frame
 np_data <- NULL
 
-# We use data from 2018 to 2022.
+# Load each data and merge them
 for (year in data_range) {
   np <- read.csv(
     paste0("https://www.uscis.gov/sites/default/files/document/data/h1b_datahubexport-", year, ".csv"),
     stringsAsFactors = FALSE,
     col.names = data_columns,
-    dec = ",",
   )
 
+  # Remove comma from integer fields
+  np$Initial.Approval <- as.numeric(gsub(",", "", as.character(np$Initial.Approval)))
+  np$Initial.Denial <- as.numeric(gsub(",", "", as.character(np$Initial.Denial)))
+  np$Continuing.Approval <- as.numeric(gsub(",", "", as.character(np$Continuing.Approval)))
+  np$Continuing.Denial <- as.numeric(gsub(",", "", as.character(np$Continuing.Denial)))
+  
   if(is.null(np_data)) {
     np_data <- np
   } else {
@@ -68,3 +70,12 @@ naics_list <- c(
 rm(data_columns)
 rm(year)
 rm(np)
+
+# These are global variables.
+# Please don't change the variables directly. (except for the Summary Information section)
+# Otherwise, others might get unexpected values after they changed.
+#
+# np_data    : The entire united data frame.
+# naics_list : NAICS code directory. (Key: code, Value: Job area)
+# data_range : A list of years in the data frame.
+
