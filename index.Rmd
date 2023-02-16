@@ -70,9 +70,9 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 
 ### Table
-For H1 visa statistics, the most important information will be the approval/denial trend and the approval rate by year.
+For H1 visa statistics, the most important information will be the approval/denial trend and the approval rate by year. This is a table that calculates the total sum of approvals and denials by year and the approval rate.
 
-This is a table that calculates the total sum of approvals and denials by year and the approval rate.
+As shown in the statistics table below, the H1 approval rate continued to increase after the COVID-19 pandemic.
 
 ```{r, echo = FALSE, code = readLines("table.R"), results='asis'}
 ```
@@ -86,17 +86,18 @@ Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-```{r, echo = FALSE, code = readLines("chart1.R")}
+```{r, echo = FALSE, fig.width = 10, code = readLines("chart1.R")}
 ```
 
 
 ### Chart 2
+This chart represents the total number of H1 visa sponsors by industry sector from 2018 to 2022. The x-axis represents the total number of employers(sponsors), and the y-axis represents the industry sector of the sponsors. For more information about the industry sector, please visit https://www.census.gov/naics/
 
-Include a chart
+The chart shows that the scientific and technical industries have an overwhelming majority of H1 sponsors. On the other hand, agriculture and fisheries have been found to support the fewest H1 visas.
 
-Describe why you chose this chart and what information it reveals
+Although it currently shows the total number of sponsors over the pandemic period for visibility, the chart will be enhanced with a filter function in the final project. The chart will have `Year` and `Sectors` query filters so that users can comfortably compare the total numbers of sponsors by period and industry. Based on this data, we expect to be able to see which industries have undergone the most changes during the pandemic period.
 
-```{r, echo = FALSE, code = readLines("chart2.R")}
+```{r, echo = FALSE, fig.width = 10, fig.height = 6, code = readLines("chart2.R")}
 ```
 
 
@@ -106,5 +107,5 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-```{r, echo = FALSE, code = readLines("chart3.R")}
+```{r, echo = FALSE, fig.width = 10, code = readLines("chart3.R")}
 ```

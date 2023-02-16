@@ -1,3 +1,6 @@
+# The init.R file must be executed before this R file.
+
+# Load a string and table libraries
 library(knitr)
 library(stringr)
 
@@ -13,7 +16,6 @@ df <- df %>%
     Initial.Denial = sum(Initial.Denial),
     Continuing.Approval = sum(Continuing.Approval),
     Continuing.Denial = sum(Continuing.Denial),
-    Continuing.Denial = sum(Continuing.Denial),
   )
 
 # Calculate the total approval and denial
@@ -27,7 +29,7 @@ df <- df %>%
     "Approval.Rate(%)" =
       round(Total.Approval / (Total.Approval + Total.Denial) * 100.0, digits=1)
   )
-  
+
 # Remove dot in columns for wordwrap
 colnames(df) <- str_replace_all(colnames(df), "\\.", "<br>")
 
