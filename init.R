@@ -1,6 +1,10 @@
 # This is a file to handle global data.
 # Feel free to add initialization code for global here.
 library(dplyr)
+library(ggplot2)
+library(maps)
+library(mapproj)
+library(scales)
 
 # Turn off scientific notation
 options(scipen = 999)
@@ -73,6 +77,10 @@ np_naics <- data.frame(
 rm(data_columns)
 rm(year)
 rm(np)
+
+# Load state abbreviation file
+state_abbreviations <- read.csv("https://www.thespreadsheetguru.com/s/50-States.csv", stringsAsFactors = FALSE)
+state_abbreviations$State <- tolower(state_abbreviations$State)
 
 # These are global variables.
 # Please don't change the variables directly. (except for the Summary Information section)
