@@ -12,8 +12,8 @@ options(scipen = 999)
 # Load csv data and combine them.
 # Data source: https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub/h-1b-employer-data-hub-files
 
-# Data year range definition. Currently, we use from 2018 to 2022.
-data_years <- c(2018:2022)
+# Data year range definition. Currently, we use from 2020 to 2022.
+data_years <- c(2020:2022)
 
 # The header column is slightly different each year, so we need to unify them.
 data_columns <- c(
@@ -64,7 +64,7 @@ np_naics <- data.frame(
     "Construction", "Manufacturing", "Manufacturing",
     "Manufacturing", "Wholesale Trade", "Retail Trade",
     "Retail Trade", "Transportation and Warehousing", "Transportation and Warehousing",
-    "Information", "Finance and Insurance	", "Real Estate Rental and Leasing",
+    "Information", "Finance and Insurance", "Real Estate Rental and Leasing",
     "Professional, Scientific, and Technical Services", "Management of Companies and Enterprises", "Administrative, Support, Waste, and Remediation",
     "Educational Services", "Health Care and Social Assistance", "Arts, Entertainment, and Recreation",
     "Accommodation and Food Services", "Other Services (except Public Administration)", "Public Administration",
