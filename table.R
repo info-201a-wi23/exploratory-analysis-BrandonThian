@@ -35,5 +35,5 @@ colnames(df) <- str_replace_all(colnames(df), "\\.", "<br>")
 
 kable(
   head(df, 10),
-  caption = "The Table of H1 Visa Approval and Denials from 2018 to 2022")
+  caption = "The Table of H1 Visa Approval and Denials from 2020 to 2022")
 

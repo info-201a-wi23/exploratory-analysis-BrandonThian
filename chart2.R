@@ -54,4 +54,4 @@ ggplot(df) +
     x = "The Number of Sponsors",
     y = "Industry Sectors",
   ) +
-  xlim(0, 130000)
+  xlim(0, 80000)

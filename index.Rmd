@@ -91,7 +91,7 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 
 ### Chart 2
-This chart represents the total number of H1 visa sponsors by industry sector from 2018 to 2022. The x-axis represents the total number of employers(sponsors), and the y-axis represents the industry sector of the sponsors. For more information about the industry sector, please visit https://www.census.gov/naics/
+This chart represents the total number of H1 visa sponsors by industry sector from 2020 to 2022. The x-axis represents the total number of employers(sponsors), and the y-axis represents the industry sector of the sponsors. For more information about the industry sector, please visit https://www.census.gov/naics/
 
 The chart shows that the scientific and technical industries have an overwhelming majority of H1 sponsors. On the other hand, agriculture and fisheries have been found to support the fewest H1 visas.
 
