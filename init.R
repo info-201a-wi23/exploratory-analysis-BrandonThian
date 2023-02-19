@@ -68,7 +68,7 @@ np_naics <- data.frame(
     "Professional, Scientific, and Technical Services", "Management of Companies and Enterprises", "Administrative, Support, Waste, and Remediation",
     "Educational Services", "Health Care and Social Assistance", "Arts, Entertainment, and Recreation",
     "Accommodation and Food Services", "Other Services (except Public Administration)", "Public Administration",
-    "Etc"
+    "Other"
   ),
   stringsAsFactors = FALSE
 )
