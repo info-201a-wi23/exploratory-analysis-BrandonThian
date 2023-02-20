@@ -83,8 +83,11 @@ We only have one dataset source which is from USCIS. Since we do not have additi
 
 
 ### Summary Information
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Summary.R")}
+```
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+
+The total number of records is **`r summary$Total_record`**. The state that has the highest number of sponsor is **`r summary$max_state`**(California) that has **`r summary$max_sponsor`** sponsors. The state that has the lowest number of sponsor is **`r summary$min_state`**(American Armed Forced Europe)that has **`r summary$min_sponsor`** sponsors.
 
 
 ### Table
