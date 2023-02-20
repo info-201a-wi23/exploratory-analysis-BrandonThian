@@ -127,5 +127,8 @@ The purpose of this visualization is to inform foreign workers and international
 
 Currently, the chart visualizes multiple lines for indicating the number of Initial and Continuing approvals together, but we are planning to divide it into two charts for approval types and apply a filter function that enables choosing which charts to view. This function will help viewers more feasible to identify the chart. 
 
-```{r, echo = FALSE, warning = FALSE, fig.width = 10, code = readLines("chart3.R")}
+
+<center> 
+```{r, echo = FALSE, warning = FALSE, fig.width = 8, fig.height = 7, code = readLines("chart3.R")}
 ```
+</center>

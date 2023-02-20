@@ -25,12 +25,16 @@ df <- data.frame(year_x <- c(2020,2021,2022),
 
 
 #Visualize the Line Chart
-ggplot(data=df, aes(x=year_x)) + 
-  geom_line(aes(y=initial_y, colour="Initial"), linewidth=2) +
-  geom_line(aes(y=Continuing_y, colour="Continuing"), linewidth=2) +
+ggplot(df) +
+  aes(x = year_x) +
+  geom_line(aes(y = initial_y, colour = "Initial"), linewidth = 2) +
+  geom_line(aes(y = Continuing_y, colour = "Continuing"), linewidth = 2) +
   scale_color_manual(name = "Type of Approval", values = c("Initial" = "darkblue", "Continuing" = "red")) +
-  
-  labs(title = paste0("The Change of The Number of H1-B Visa Sponsors"),
-       x = "Pandemic Year",
-       y = "Number of Approvals")
- 
+  labs(
+    title = paste0("The Change of The Number of H1-B Visa Sponsors"),
+    x = "Pandemic Year",
+    y = "Number of Approvals"
+  ) +
+  scale_x_continuous(
+    breaks = seq(2020, 2022, 1)
+  )
