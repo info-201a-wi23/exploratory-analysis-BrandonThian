@@ -124,10 +124,14 @@ Although it currently shows the total number of sponsors over the pandemic perio
 
 
 ### Chart 3
+The third chart visualizes the difference in the number of H1-B visa sponsor approvals in each pandemic year (2020~2022). The x-axis represents the pandemic year, and the y-axis represents the total number of approvals. Also, there are multiple lines in this chart; the red line illustrates the number of Continuing approvals, and the blue line illustrates the number of Initial approvals. 
 
-Include a chart
+The purpose of this visualization is to inform foreign workers and international students about how sponsor approvals have been impacted during the pandemic year. The chart indicates that the number of approvals were fairly underneath in 2020 but dramatically increased in 2021, and decreased slightly in 2022. 
 
-Describe why you chose this chart and what information it reveals
+Currently, the chart visualizes multiple lines for indicating the number of Initial and Continuing approvals together, but we are planning to divide it into two charts for approval types and apply a filter function that enables choosing which charts to view. This function will help viewers more feasible to identify the chart. 
 
-```{r, echo = FALSE, warning = FALSE, fig.width = 10, code = readLines("chart3.R")}
+
+<center> 
+```{r, echo = FALSE, warning = FALSE, fig.width = 8, fig.height = 7, code = readLines("chart3.R")}
 ```
+</center>
