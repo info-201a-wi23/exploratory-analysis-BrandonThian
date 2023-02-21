@@ -87,7 +87,7 @@ We only have one dataset source which is from USCIS. Since we do not have additi
 ```
 
 
-The total number of records is **`r summary$Total_record`**. The state that has the highest number of sponsor is **`r summary$max_state`**(California) that has **`r summary$max_sponsor`** sponsors. The state that has the lowest number of sponsor is **`r summary$min_state`**(American Armed Forced Europe)that has **`r summary$min_sponsor`** sponsors.
+The total number of records is **`r summary$Total_record`**. The state that has the highest number of sponsor is **`r summary$max_state`** (California) that has **`r summary$max_sponsor`** sponsors. The state that has the lowest number of sponsor is **`r summary$min_state`** (American Armed Forced Europe) that has **`r summary$min_sponsor`** sponsors.
 
 
 ### Table
